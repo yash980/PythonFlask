@@ -31,7 +31,7 @@ def password_generator():
         raw_file.close()
 
         final_password = "".join(set(password))
-        generate_password = SubmitField("Generate Password")
+        # generate_password = SubmitField("Generate Password")
         return render_template("generate.html", password=final_password)
 
 
